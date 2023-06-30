@@ -1,19 +1,13 @@
 
 import React from "react";
+import ButtonCounter from "./../ButtonCounter";
 import './../styles/App.css';
 
 const App = () => {
-  let [count, setCount] = useState(0);
 
-   function countClicks(){
-      setCount(count+1)
-   }
-
-    
-    return(
+ return(
       <div>
-          <p>Button clicked {count} times</p>
-          <button onClick={countClicks}>Click me</button>
+          <ButtonCounter/>
       </div>
       
     )
